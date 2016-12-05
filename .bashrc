@@ -19,6 +19,7 @@ alias gp='git push origin'
 alias grm='git rebase master'
 alias grpo='git remote prune origin'
 alias gs='git status'
+alias plum='git pull --rebase upstream master'
 
 # ============
 # UNIX ALIASES

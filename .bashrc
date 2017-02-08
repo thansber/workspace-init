@@ -1,5 +1,3 @@
-PS1="[\u] \w\n> "
-
 export PROJ_DIR=~/work
 
 # https://github.com/git/git/blob/master/contrib/completion/git-completion.bash

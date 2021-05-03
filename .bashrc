@@ -1,5 +1,3 @@
-PS1="[\u] \w\n> "
-
 export PROJ_DIR=~/work
 
 # https://github.com/git/git/blob/master/contrib/completion/git-completion.bash
@@ -12,17 +10,26 @@ alias pdir='cd $PROJ_DIR'
 # ===========
 alias br='git branch --list'
 alias cbr='git checkout -b'
+alias cl='gcm; pu; gp; grpo; dbr -D'
 alias dbr='git branch -d'
+alias diffmd='git log upstream/main..develop'
 alias g='git'
+alias gca='git commit --amend'
 alias gcd='git checkout develop'
-alias gcm='git checkout master'
+alias gcm='git checkout main'
+alias gl='git log --oneline'
 alias gp='git push origin'
+alias gpl='git pull --rebase'
 alias grd='git rebase develop'
-alias grm='git rebase master'
+alias grm='git rebase main'
 alias grpo='git remote prune origin'
 alias gs='git status'
+alias gsh='git show --pretty="" --name-status'
+alias plr='git pull --rebase'
 alias plud='git pull --rebase upstream develop'
-alias plum='git pull --rebase upstream master'
+alias plum='git pull --rebase upstream main'
+alias pu='plum'
+alias rnbr='git branch -m'
 
 # ============
 # UNIX ALIASES

@@ -2,13 +2,13 @@ if [ -f $HOME/.bashrc ]; then
         source $HOME/.bashrc
 fi
 
-export VAULT_ADDR=https://vault.apa.comcast.net
-
 source ~/.ci_profile
 source ~/.hoagie-shoppe-profile
 source ~/.timeline_legacy_profile
 source ~/.elements_profile
 
+# Make nvm available everywhere
+source $(brew --prefix nvm)/nvm.sh
 
 parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'

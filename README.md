@@ -12,3 +12,15 @@ workspace, i.e. when I get a new computer for a job.
 1. Copy all `*.zsh` files in `/custom` to `~/.oh-my-zsh/custom`
 1. Create a folder for your Github projects: `~/work`
 
+Apps to install:
+* VSCode
+* iTerm2
+* 1Password
+
+VSCode Plugins:
+* GitLens
+* Move TS
+* ESLint
+* Prettier
+* Thunder Client (maybe)
+

@@ -8,7 +8,8 @@ export SDK_UI_CORE=libraries/gi-web-sdk-ui-core
 export SDK_REACT=libraries/gi-web-sdk-react
 export SDK_SAMPLE_APP=sandbox/gi-web-sdk-sample-app-react
 export SDK_STENCIL=libraries/gi-web-sdk-stencil
-export WEB_USER_SERVICES=apps/fuse-web/common/auth-core
+export AUTH_CLIENT_CORE=web/common/auth-core
+export AUTH_CLIENT_APP=apps/fuse-web/apps/auth
 
 export OBSERVABILITY_ROOT=wbd-beam-observability
 export STRING_ROOT=wbd-beam-gsm-englishstringlibrary
@@ -21,7 +22,8 @@ alias sam='beam; cd $SDK_SAMPLE_APP'
 alias sdk='beam; cd $SDK_UI_CORE'
 alias sten='beam; cd $SDK_STENCIL'
 alias str='cd $PROJ_DIR/$STRING_ROOT'
-alias wus='beam; cd $WEB_USER_SERVICES'
+alias wus='beam; cd $AUTH_CLIENT_CORE'
+alias wusa='beam; cd $AUTH_CLIENT_APP'
 
 alias ba='beam; cd apps'
 alias bl='beam; cd libraries'
@@ -44,4 +46,4 @@ alias samw='sam; rw'
 alias sgo='sam; rs'
 alias sw='sam; rw'
 alias wusr='wus; ru; rbt'
-alias wuss='wus; rs'
+alias wuss='wusa; rs'
